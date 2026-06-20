@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c1445"/>
+      <stop offset="100%" style="stop-color:#1e3a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#g)"/>
+  <!-- Bar chart -->
+  <rect x="80" y="180" width="50" height="80" rx="4" fill="#3b82f6" opacity="0.8"/>
+  <rect x="150" y="140" width="50" height="120" rx="4" fill="#2563eb" opacity="0.9"/>
+  <rect x="220" y="100" width="50" height="160" rx="4" fill="#3b82f6"/>
+  <rect x="290" y="120" width="50" height="140" rx="4" fill="#1d4ed8" opacity="0.8"/>
+  <rect x="360" y="90" width="50" height="170" rx="4" fill="#3b82f6" opacity="0.9"/>
+  <rect x="430" y="150" width="50" height="110" rx="4" fill="#2563eb" opacity="0.7"/>
+  <!-- Baseline -->
+  <line x1="60" y1="260" x2="540" y2="260" stroke="#3b82f6" stroke-width="1.5" opacity="0.4"/>
+  <!-- Title block -->
+  <rect x="60" y="30" width="340" height="45" rx="8" fill="#1e3a8a" opacity="0.7"/>
+  <text x="80" y="50" font-family="system-ui" font-size="11" font-weight="800" fill="#93c5fd" letter-spacing="2">MARKSCAN</text>
+  <text x="80" y="66" font-family="system-ui" font-size="9" fill="#60a5fa" letter-spacing="1">PRODUCTIEHUIZEN BELGIË 2026</text>
+  <!-- Colruyt badge -->
+  <rect x="420" y="30" width="120" height="32" rx="8" fill="#1e40af" stroke="#3b82f6" stroke-width="1"/>
+  <text x="480" y="50" font-family="system-ui" font-size="10" fill="#bfdbfe" text-anchor="middle">Colruyt Group</text>
+</svg>

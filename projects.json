@@ -1,64 +1,66 @@
 {
   "meta": {
     "owner": "Stverstr",
-    "masterPasswordHash": "__SET_ON_FIRST_RUN__",
+    "masterPasswordHash": "750db0f147fb55c6755f5b3bb2606a35623b43d03c80056c48587dfa2df45c04",
     "githubPagesBase": "https://stverstr.github.io",
     "lastUpdated": "2026-06-20"
   },
   "projects": [
     {
       "id": "roadmap-tool",
-      "displayName": "Roadmap Tool",
+      "displayName": "Roadmap Studio",
       "repo": "Roadmap-Tool",
       "url": "https://stverstr.github.io/Roadmap-Tool",
-      "description": "Strategische roadmap visualisatie tool",
-      "thumbnail": "",
+      "description": "Interactieve roadmap studio voor strategische planning. Visualiseer doelstellingen, mijlpalen en voortgang op een tijdlijn.",
+      "thumbnail": "thumbnails/roadmap-tool.svg",
       "status": "active",
-      "createdAt": "",
-      "hasDatabase": false,
+      "createdAt": "2026",
+      "hasDatabase": true,
       "supabase": {
-        "projectUrl": "",
-        "anonKey": ""
+        "projectUrl": "https://uvodxrrxsxnjlinqrjlw.supabase.co",
+        "anonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV2b2R4cnJ4c3huamxpbnFyamx3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk1Mjg4MzYsImV4cCI6MjA5NTEwNDgzNn0.1lX4o9zuV0VZJG7S53rdqfbRuic6YnT7g-YPnePavnI"
       },
       "credentials": {
         "masterProtected": true,
         "appUsers": []
       },
       "originalPrompt": "",
-      "functionalityDescription": "",
-      "tags": []
+      "functionalityDescription": "Strategische roadmap tool met tijdlijn, mijlpalen, doelstellingen en voortgangsopvolging. Gebruikers kunnen projecten aanmaken, beschrijvingen toevoegen en statussen bijhouden. Data wordt opgeslagen in Supabase.",
+      "tags": ["strategie", "planning", "supabase"]
     },
     {
       "id": "hackathon-arena",
       "displayName": "Hackathon Arena",
       "repo": "hackathon-arena",
       "url": "https://stverstr.github.io/hackathon-arena",
-      "description": "",
-      "thumbnail": "",
+      "description": "Team challenge platform voor hackathons. Teams dagen elkaar uit, een jury beslist de winnaar via een rad van fortuin.",
+      "thumbnail": "thumbnails/hackathon-arena.svg",
       "status": "active",
-      "createdAt": "",
-      "hasDatabase": false,
+      "createdAt": "2026",
+      "hasDatabase": true,
       "supabase": {
-        "projectUrl": "",
-        "anonKey": ""
+        "projectUrl": "https://uvodxrrxsxnjlinqrjlw.supabase.co",
+        "anonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV2b2R4cnJ4c3huamxpbnFyamx3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk1Mjg4MzYsImV4cCI6MjA5NTEwNDgzNn0.1lX4o9zuV0VZJG7S53rdqfbRuic6YnT7g-YPnePavnI"
       },
       "credentials": {
         "masterProtected": true,
-        "appUsers": []
+        "appUsers": [
+          { "role": "Jury", "username": "jury", "password": "" }
+        ]
       },
       "originalPrompt": "",
-      "functionalityDescription": "",
-      "tags": []
+      "functionalityDescription": "Live hackathon platform waarbij teams elkaar kunnen uitdagen. Scorebord toont rangschikking. Jury draait rad van fortuin om spelletje te kiezen. Ei-tracker volgt teamei op. Easter eggs verborgen doorheen de app. Jury login vereist. Data via Supabase.",
+      "tags": ["hackathon", "gamification", "supabase", "live"]
     },
     {
       "id": "colruyt-loyalty-poc",
-      "displayName": "Colruyt Loyalty POC",
+      "displayName": "Xtra Loyalty POC",
       "repo": "colruyt-loyalty-poc",
       "url": "https://stverstr.github.io/colruyt-loyalty-poc",
-      "description": "",
-      "thumbnail": "",
+      "description": "Interactieve presentatie van het Xtra Loyalty concept voor Colruyt Group. Toont perspectieven van klant, marketeer en duurzaamheidsmanager.",
+      "thumbnail": "thumbnails/colruyt-loyalty-poc.svg",
       "status": "active",
-      "createdAt": "",
+      "createdAt": "2026",
       "hasDatabase": false,
       "supabase": {
         "projectUrl": "",
@@ -69,18 +71,18 @@
         "appUsers": []
       },
       "originalPrompt": "",
-      "functionalityDescription": "",
-      "tags": []
+      "functionalityDescription": "Interactieve storytelling presentatie over Xtra loyalty programma. Drie invalshoeken: de klant (Xtratjes sparen), de merk-marketeer, de groep-marketeer en de duurzaamheidsmanager. Visueel verhaal zonder database.",
+      "tags": ["colruyt", "loyalty", "presentatie", "poc"]
     },
     {
       "id": "markscan-productiehuizen",
       "displayName": "Markscan Productiehuizen",
       "repo": "markscan-productiehuizen",
       "url": "https://stverstr.github.io/markscan-productiehuizen",
-      "description": "",
-      "thumbnail": "",
+      "description": "Strategische analyse van het Belgische productiehuis-landschap voor Colruyt Group 2026. Marktanalyse, spelers en overnamestrategie.",
+      "thumbnail": "thumbnails/markscan-productiehuizen.svg",
       "status": "active",
-      "createdAt": "",
+      "createdAt": "2026",
       "hasDatabase": false,
       "supabase": {
         "projectUrl": "",
@@ -91,18 +93,18 @@
         "appUsers": []
       },
       "originalPrompt": "",
-      "functionalityDescription": "",
-      "tags": []
+      "functionalityDescription": "Interactieve strategische analyse over productiehuizen in België (Markscan context). Behandelt: definitie van productiehuizen, Belgische advertentiemarkt, spelersmapping, vergelijking met retailers, waardering & overnameprijzen, strategische aanbevelingen voor Colruyt Group.",
+      "tags": ["colruyt", "strategie", "analyse", "presentatie"]
     },
     {
       "id": "huisvoorraad",
       "displayName": "Huisvoorraad",
       "repo": "huisvoorraad",
       "url": "https://stverstr.github.io/huisvoorraad",
-      "description": "",
-      "thumbnail": "",
+      "description": "Beheer je thuisvoorraad.",
+      "thumbnail": "thumbnails/huisvoorraad.svg",
       "status": "active",
-      "createdAt": "",
+      "createdAt": "2026",
       "hasDatabase": false,
       "supabase": {
         "projectUrl": "",
@@ -114,17 +116,17 @@
       },
       "originalPrompt": "",
       "functionalityDescription": "",
-      "tags": []
+      "tags": ["persoonlijk", "thuis"]
     },
     {
       "id": "cg-loyalty-poc2",
       "displayName": "CG Loyalty POC 2",
       "repo": "cg-loyalty-poc2",
       "url": "https://stverstr.github.io/cg-loyalty-poc2",
-      "description": "",
-      "thumbnail": "",
+      "description": "Tweede iteratie van het Colruyt Group loyalty concept.",
+      "thumbnail": "thumbnails/cg-loyalty-poc2.svg",
       "status": "active",
-      "createdAt": "",
+      "createdAt": "2026",
       "hasDatabase": false,
       "supabase": {
         "projectUrl": "",
@@ -136,7 +138,7 @@
       },
       "originalPrompt": "",
       "functionalityDescription": "",
-      "tags": []
+      "tags": ["colruyt", "loyalty", "poc"]
     }
   ]
 }
