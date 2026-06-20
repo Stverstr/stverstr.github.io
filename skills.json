@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "owner": "Stverstr",
+    "lastUpdated": "2026-06-20"
+  },
+  "skills": [
+    {
+      "id": "deploy-project",
+      "displayName": "Deploy Project",
+      "type": "skill",
+      "emoji": "🚀",
+      "description": "Automatisch een nieuw webproject online zetten via GitHub Pages en toevoegen aan de portfolio.",
+      "whatItDoes": "Doorloopt de volledige deploy-cyclus: projectinfo verzamelen, HTML bouwen met wachtwoordgate, GitHub repo pushen, optioneel Supabase database opzetten, en de portfolio op stverstr.github.io bijwerken met beschrijving en thumbnail.",
+      "triggerPhrases": "nieuw project, zet online, deploy, GitHub Pages, nieuwe applicatie bouwen, voeg toe aan portfolio",
+      "originalPrompt": "Bouw een stabiel, herhaalbaar systeem waarbij Claude een webproject automatisch online zet via GitHub Pages, de portfolio bijwerkt, en alle prompts en credentials bijhoudt. Eén master wachtwoord voor alle projecten. Aparte repo per project.",
+      "createdAt": "2026-06-20",
+      "installedAs": "anthropic-skills:deploy-project",
+      "tags": ["deploy", "github", "workflow", "portfolio"]
+    }
+  ],
+  "agents": []
+}

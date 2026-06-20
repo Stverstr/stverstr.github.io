@@ -367,6 +367,46 @@
     }
     .empty-state .icon { font-size: 3rem; margin-bottom: 1rem; }
 
+    /* ── Skills Section ── */
+    .skills-section { margin-top: 4rem; padding-top: 3rem; border-top: 1px solid var(--border); }
+    .skills-section h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .skills-section .sub { font-size: 0.85rem; color: var(--muted); margin-bottom: 1.75rem; }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.25rem;
+      cursor: pointer;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .skill-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+    .skill-card-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
+    .skill-emoji { font-size: 1.6rem; line-height: 1; }
+    .skill-name { font-size: 0.95rem; font-weight: 700; }
+    .skill-type {
+      font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+      padding: 0.2rem 0.5rem; border-radius: 5px;
+      background: rgba(99,102,241,0.15); color: var(--accent2); margin-left: auto;
+    }
+    .skill-type.agent { background: rgba(34,197,94,0.12); color: #4ade80; }
+
+    .skill-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.55; margin-bottom: 0.9rem; }
+
+    .skill-triggers {
+      font-size: 0.75rem; color: var(--muted);
+      background: var(--surface2); border-radius: 7px; padding: 0.5rem 0.75rem;
+      font-style: italic;
+    }
+    .skill-triggers strong { color: var(--text); font-style: normal; font-weight: 600; }
+
     /* Scrollbar */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: transparent; }
@@ -420,6 +460,13 @@
       <h2>Alle projecten</h2>
     </div>
     <div id="projectGrid"></div>
+
+    <!-- SKILLS & AGENTS SECTIE -->
+    <div class="skills-section">
+      <h2>Skills &amp; Agents</h2>
+      <p class="sub">Geïnstalleerde Claude-skills en agents — wat ze doen, wanneer ze triggeren, en de originele prompt.</p>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
   </main>
 </div>
 
@@ -509,6 +556,68 @@
     return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
   }
 
+  // ─────────────────────────────────────────
+  // SKILLS DATA
+  // ─────────────────────────────────────────
+  let SKILLS = [];
+
+  async function loadSkills() {
+    try {
+      const r = await fetch('./skills.json?_=' + Date.now());
+      const data = await r.json();
+      SKILLS = [...(data.skills || []), ...(data.agents || [])];
+    } catch(e) { SKILLS = []; }
+    renderSkills();
+  }
+
+  function renderSkills() {
+    const grid = document.getElementById('skillsGrid');
+    if (!SKILLS.length) {
+      grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1"><div class="icon">🤖</div><p>Nog geen skills opgeslagen.</p></div>`;
+      return;
+    }
+    grid.innerHTML = SKILLS.map(s => `
+      <div class="skill-card" onclick="openSkill('${s.id}')">
+        <div class="skill-card-header">
+          <span class="skill-emoji">${s.emoji || '🤖'}</span>
+          <span class="skill-name">${s.displayName}</span>
+          <span class="skill-type ${s.type === 'agent' ? 'agent' : ''}">${s.type === 'agent' ? 'Agent' : 'Skill'}</span>
+        </div>
+        <div class="skill-desc">${s.description || ''}</div>
+        ${s.triggerPhrases ? `<div class="skill-triggers"><strong>Triggert op:</strong> ${s.triggerPhrases}</div>` : ''}
+      </div>
+    `).join('');
+  }
+
+  function openSkill(id) {
+    const s = SKILLS.find(x => x.id === id);
+    if (!s) return;
+    document.getElementById('modalTitle').textContent = `${s.emoji || ''} ${s.displayName}`;
+    document.getElementById('modalBody').innerHTML = `
+      <div class="modal-section">
+        <h3>Wat doet het</h3>
+        <p>${s.whatItDoes || s.description || 'Geen beschrijving.'}</p>
+      </div>
+      <div class="modal-section">
+        <h3>Triggert automatisch op</h3>
+        <p style="font-style:italic;color:var(--muted)">${s.triggerPhrases || '—'}</p>
+      </div>
+      <div class="modal-section">
+        <h3>Geïnstalleerd als</h3>
+        <div class="code-block">${escHtml(s.installedAs || '—')}</div>
+      </div>
+      <div class="modal-section">
+        <h3>Originele prompt</h3>
+        <div class="code-block">${escHtml(s.originalPrompt || 'Niet opgeslagen.')}</div>
+      </div>
+      <div class="modal-section">
+        <h3>Aangemaakt op</h3>
+        <p style="color:var(--muted)">${s.createdAt || '—'}</p>
+      </div>
+    `;
+    document.getElementById('modal').classList.add('open');
+  }
+
   async function unlockPortfolio() {
     const val = document.getElementById('gatePw').value;
     const hash = await sha256(val);
@@ -518,6 +627,7 @@
       document.getElementById('portfolio').style.display = 'block';
       document.getElementById('credTrigger').style.display = 'flex';
       loadProjects();
+      loadSkills();
     } else {
       const inp = document.getElementById('gatePw');
       inp.classList.add('error');
@@ -532,6 +642,7 @@
       document.getElementById('portfolio').style.display = 'block';
       document.getElementById('credTrigger').style.display = 'flex';
       loadProjects();
+      loadSkills();
     }
   });
 
