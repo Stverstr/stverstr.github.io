@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1923"/>
+      <stop offset="100%" stop-color="#1a2942"/>
+    </linearGradient>
+    <linearGradient id="mt1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2980b9"/>
+      <stop offset="100%" stop-color="#1a3a5a"/>
+    </linearGradient>
+    <linearGradient id="mt2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a4a6a"/>
+      <stop offset="100%" stop-color="#1a2942"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="400" height="240" fill="url(#sky)"/>
+  <!-- Stars -->
+  <circle cx="40" cy="25" r="1.2" fill="#fff" opacity=".7"/>
+  <circle cx="90" cy="15" r="1" fill="#fff" opacity=".5"/>
+  <circle cx="150" cy="30" r="1.4" fill="#fff" opacity=".8"/>
+  <circle cx="220" cy="12" r="1" fill="#fff" opacity=".6"/>
+  <circle cx="310" cy="22" r="1.2" fill="#fff" opacity=".7"/>
+  <circle cx="370" cy="18" r="1" fill="#fff" opacity=".5"/>
+  <!-- Back mountains -->
+  <polygon points="0,160 60,80 120,130 180,70 240,120 300,60 360,100 400,75 400,200 0,200" fill="url(#mt2)" opacity=".7"/>
+  <!-- Front mountains -->
+  <polygon points="0,200 50,130 110,170 170,100 230,150 290,90 350,140 400,110 400,240 0,240" fill="url(#mt1)"/>
+  <!-- Snow caps -->
+  <polygon points="170,100 185,115 155,115" fill="white" opacity=".9"/>
+  <polygon points="290,90 305,108 275,108" fill="white" opacity=".9"/>
+  <polygon points="60,80 72,95 48,95" fill="white" opacity=".7"/>
+  <!-- Route dots -->
+  <circle cx="30" cy="185" r="5" fill="#e74c3c" opacity=".9"/>
+  <circle cx="90" cy="175" r="4" fill="#e67e22" opacity=".9"/>
+  <circle cx="155" cy="170" r="4" fill="#f39c12" opacity=".9"/>
+  <circle cx="210" cy="165" r="4" fill="#27ae60" opacity=".9"/>
+  <circle cx="275" cy="158" r="4" fill="#2980b9" opacity=".9"/>
+  <circle cx="340" cy="168" r="4" fill="#c0392b" opacity=".9"/>
+  <!-- Route line -->
+  <polyline points="30,185 90,175 155,170 210,165 275,158 340,168" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-dasharray="5,4"/>
+  <!-- Title bar -->
+  <rect x="0" y="195" width="400" height="45" fill="rgba(10,15,25,0.85)"/>
+  <text x="20" y="218" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="white">🏔️ Alpenreis Zomer 2026</text>
+  <text x="20" y="233" font-family="system-ui,sans-serif" font-size="10" fill="#8a9bb8">Ursel · Arlon · Schwarzwald · Bodensee · Zugspitze</text>
+</svg>

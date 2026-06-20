@@ -7,6 +7,34 @@
   },
   "projects": [
     {
+      "id": "alpenreis-2026",
+      "displayName": "Alpenreis 2026",
+      "repo": "alpenreis-2026",
+      "url": "https://stverstr.github.io/alpenreis-2026",
+      "description": "Interactieve reiskaart voor de zomervakantie 2026 — rondreis van Ursel naar de Alpen en terug. Dag-per-dag itinerary met kaart, routes en avontuurlijke activiteiten.",
+      "thumbnail": "thumbnails/alpenreis-2026.svg",
+      "status": "active",
+      "createdAt": "2026-06-20",
+      "hasDatabase": false,
+      "supabase": {
+        "projectUrl": "",
+        "anonKey": ""
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": []
+      },
+      "originalPrompt": "Rondreis 25/7 - 1/8, van Ursel naar de Alpen en terug, met 2 tieners (14 en 15 jaar), in een Tesla, zoveel mogelijk avontuur: wandelingen, rivieren, zwemmen, klimmen, raften, klettersteig. Route: Arlon (Surf Luxembourg) → Schwarzwald → Bodensee/Bregenz → Garmisch-Partenkirchen (Zugspitze, via ferrata) → recht naar huis.",
+      "functionalityDescription": "Interactieve kaart met dag-per-dag reisitinerary. Echte wegroutes via OSRM routing API. Clickbare stops met activiteiten. Overnachtingsicoontjes. Km-labels per etappe. Kleurgecodeerd per reisdag. Sidebar met uitgebreide info per dag incl. avontuur/cultuur/zwem-tags.",
+      "tags": [
+        "reis",
+        "vakantie",
+        "kaart",
+        "avontuur",
+        "alpen"
+      ]
+    },
+    {
       "id": "roadmap-tool",
       "displayName": "Roadmap Studio",
       "repo": "Roadmap-Tool",
@@ -26,7 +54,12 @@
       },
       "originalPrompt": "Bouw een roadmap tool met: storyboard (grid tracks × fasen), tijdlijn (Gantt), backlog, filters, en login via Supabase Auth. Daarna uitgebreid met: verticale tijdslijn na scroll/overlap fixes, activity detail tabs (Basis-info → Aanpak → Status → Taken → Stakeholders → Documenten), gebruikersbeheer (extra users toevoegen per klant), en een Governance tab met meeting-series, agenda per datum met topics en activiteitenlinks, en filter op storyboard/tijdlijn op basis van specifieke meeting.",
       "functionalityDescription": "Strategische roadmap studio met storyboard (tracks × fasen), Gantt-tijdlijn, backlog en filters. Login via Supabase Auth. Activity detail scherm met tabstructuur. Gebruikersbeheer per klant. Governance module met meetings, agenda's en activiteitenkoppelingen. Gebouwd in meerdere sessies: initiële bouw → tijdslijn redesign → gebruikersbeheer → activity interface → governance tab.",
-      "tags": ["strategie", "planning", "supabase", "governance"]
+      "tags": [
+        "strategie",
+        "planning",
+        "supabase",
+        "governance"
+      ]
     },
     {
       "id": "hackathon-arena",
@@ -45,12 +78,21 @@
       "credentials": {
         "masterProtected": true,
         "appUsers": [
-          { "role": "Jury", "username": "jury", "password": "" }
+          {
+            "role": "Jury",
+            "username": "jury",
+            "password": ""
+          }
         ]
       },
       "originalPrompt": "",
       "functionalityDescription": "Live hackathon platform waarbij teams elkaar kunnen uitdagen. Scorebord toont rangschikking. Jury draait rad van fortuin om spelletje te kiezen. Ei-tracker volgt teamei op. Easter eggs verborgen doorheen de app. Jury login vereist. Data via Supabase.",
-      "tags": ["hackathon", "gamification", "supabase", "live"]
+      "tags": [
+        "hackathon",
+        "gamification",
+        "supabase",
+        "live"
+      ]
     },
     {
       "id": "colruyt-loyalty-poc",
@@ -72,7 +114,12 @@
       },
       "originalPrompt": "",
       "functionalityDescription": "Interactieve storytelling presentatie over Xtra loyalty programma. Drie invalshoeken: de klant (Xtratjes sparen), de merk-marketeer, de groep-marketeer en de duurzaamheidsmanager. Visueel verhaal zonder database.",
-      "tags": ["colruyt", "loyalty", "presentatie", "poc"]
+      "tags": [
+        "colruyt",
+        "loyalty",
+        "presentatie",
+        "poc"
+      ]
     },
     {
       "id": "markscan-productiehuizen",
@@ -94,7 +141,12 @@
       },
       "originalPrompt": "",
       "functionalityDescription": "Interactieve strategische analyse over productiehuizen in België (Markscan context). Behandelt: definitie van productiehuizen, Belgische advertentiemarkt, spelersmapping, vergelijking met retailers, waardering & overnameprijzen, strategische aanbevelingen voor Colruyt Group.",
-      "tags": ["colruyt", "strategie", "analyse", "presentatie"]
+      "tags": [
+        "colruyt",
+        "strategie",
+        "analyse",
+        "presentatie"
+      ]
     },
     {
       "id": "huisvoorraad",
@@ -116,7 +168,10 @@
       },
       "originalPrompt": "",
       "functionalityDescription": "",
-      "tags": ["persoonlijk", "thuis"]
+      "tags": [
+        "persoonlijk",
+        "thuis"
+      ]
     },
     {
       "id": "cg-loyalty-poc2",
@@ -138,7 +193,11 @@
       },
       "originalPrompt": "",
       "functionalityDescription": "",
-      "tags": ["colruyt", "loyalty", "poc"]
+      "tags": [
+        "colruyt",
+        "loyalty",
+        "poc"
+      ]
     }
   ]
 }
