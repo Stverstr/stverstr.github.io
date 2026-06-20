@@ -198,6 +198,33 @@
         "loyalty",
         "poc"
       ]
+    },
+    {
+      "id": "cyclonereis-2026",
+      "displayName": "🚵 Cyclonereis Annecy 2026",
+      "repo": "cyclonereis-2026",
+      "url": "https://stverstr.github.io/cyclonereis-2026",
+      "description": "Interactieve reisapp voor de Cyclonereis Annecy 2026 (8-14 aug). Activiteiten, wandelingen, via ferrata, raften, restaurants, events en winkels rond Saint-Jean-de-Sixt.",
+      "thumbnail": "thumbnails/cyclonereis-2026.svg",
+      "status": "active",
+      "createdAt": "2026-06-20",
+      "hasDatabase": false,
+      "supabase": {
+        "projectUrl": "",
+        "anonKey": ""
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": []
+      },
+      "originalPrompt": "Cyclonereis Annecy 2026 interactieve app met activiteiten, restaurants, events en winkels rond Saint-Jean-de-Sixt (8-14 aug)",
+      "functionalityDescription": "12 dagactiviteiten met Leaflet kaarten, restaurants, events augustus 2026, supermarkten en winkels. Passwordgate aanwezig.",
+      "tags": [
+        "reizen",
+        "sport",
+        "Alpen",
+        "Annecy"
+      ]
     }
   ]
 }
