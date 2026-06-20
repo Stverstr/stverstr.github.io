@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "owner": "Stverstr",
+    "masterPasswordHash": "__SET_ON_FIRST_RUN__",
+    "githubPagesBase": "https://stverstr.github.io",
+    "lastUpdated": "2026-06-20"
+  },
+  "projects": [
+    {
+      "id": "roadmap-tool",
+      "displayName": "Roadmap Tool",
+      "repo": "Roadmap-Tool",
+      "url": "https://stverstr.github.io/Roadmap-Tool",
+      "description": "Strategische roadmap visualisatie tool",
+      "thumbnail": "",
+      "status": "active",
+      "createdAt": "",
+      "hasDatabase": false,
+      "supabase": {
+        "projectUrl": "",
+        "anonKey": ""
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": []
+      },
+      "originalPrompt": "",
+      "functionalityDescription": "",
+      "tags": []
+    },
+    {
+      "id": "hackathon-arena",
+      "displayName": "Hackathon Arena",
+      "repo": "hackathon-arena",
+      "url": "https://stverstr.github.io/hackathon-arena",
+      "description": "",
+      "thumbnail": "",
+      "status": "active",
+      "createdAt": "",
+      "hasDatabase": false,
+      "supabase": {
+        "projectUrl": "",
+        "anonKey": ""
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": []
+      },
+      "originalPrompt": "",
+      "functionalityDescription": "",
+      "tags": []
+    },
+    {
+      "id": "colruyt-loyalty-poc",
+      "displayName": "Colruyt Loyalty POC",
+      "repo": "colruyt-loyalty-poc",
+      "url": "https://stverstr.github.io/colruyt-loyalty-poc",
+      "description": "",
+      "thumbnail": "",
+      "status": "active",
+      "createdAt": "",
+      "hasDatabase": false,
+      "supabase": {
+        "projectUrl": "",
+        "anonKey": ""
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": []
+      },
+      "originalPrompt": "",
+      "functionalityDescription": "",
+      "tags": []
+    },
+    {
+      "id": "markscan-productiehuizen",
+      "displayName": "Markscan Productiehuizen",
+      "repo": "markscan-productiehuizen",
+      "url": "https://stverstr.github.io/markscan-productiehuizen",
+      "description": "",
+      "thumbnail": "",
+      "status": "active",
+      "createdAt": "",
+      "hasDatabase": false,
+      "supabase": {
+        "projectUrl": "",
+        "anonKey": ""
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": []
+      },
+      "originalPrompt": "",
+      "functionalityDescription": "",
+      "tags": []
+    },
+    {
+      "id": "huisvoorraad",
+      "displayName": "Huisvoorraad",
+      "repo": "huisvoorraad",
+      "url": "https://stverstr.github.io/huisvoorraad",
+      "description": "",
+      "thumbnail": "",
+      "status": "active",
+      "createdAt": "",
+      "hasDatabase": false,
+      "supabase": {
+        "projectUrl": "",
+        "anonKey": ""
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": []
+      },
+      "originalPrompt": "",
+      "functionalityDescription": "",
+      "tags": []
+    },
+    {
+      "id": "cg-loyalty-poc2",
+      "displayName": "CG Loyalty POC 2",
+      "repo": "cg-loyalty-poc2",
+      "url": "https://stverstr.github.io/cg-loyalty-poc2",
+      "description": "",
+      "thumbnail": "",
+      "status": "active",
+      "createdAt": "",
+      "hasDatabase": false,
+      "supabase": {
+        "projectUrl": "",
+        "anonKey": ""
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": []
+      },
+      "originalPrompt": "",
+      "functionalityDescription": "",
+      "tags": []
+    }
+  ]
+}

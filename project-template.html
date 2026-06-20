@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>__PROJECT_NAME__</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Password Gate ── */
+    #gate {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #0f0f11;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    #gate .logo {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    #gate .card {
+      background: #1a1a1f;
+      border: 1px solid #2a2a32;
+      border-radius: 16px;
+      padding: 2.5rem;
+      width: 360px;
+      text-align: center;
+    }
+    #gate h2 { color: #fff; font-size: 1.2rem; margin-bottom: 0.5rem; }
+    #gate p { color: #666; font-size: 0.85rem; margin-bottom: 1.5rem; }
+    #gate input {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 1px solid #333;
+      border-radius: 10px;
+      background: #111;
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    #gate input:focus { border-color: #6366f1; }
+    #gate input.error { border-color: #ef4444; animation: shake 0.3s; }
+    @keyframes shake {
+      0%,100% { transform: translateX(0); }
+      25% { transform: translateX(-6px); }
+      75% { transform: translateX(6px); }
+    }
+    #gate button {
+      width: 100%;
+      padding: 0.85rem;
+      background: #6366f1;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    #gate button:hover { background: #4f51d6; }
+    #gate .back { margin-top: 1rem; font-size: 0.8rem; color: #444; }
+    #gate .back a { color: #6366f1; text-decoration: none; }
+
+    /* ── App Content ── */
+    #app { display: none; }
+
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  </style>
+</head>
+<body>
+
+<!-- PASSWORD GATE -->
+<div id="gate">
+  <div class="logo">__PROJECT_EMOJI__ __PROJECT_NAME__</div>
+  <div class="card">
+    <h2>Beveiligde applicatie</h2>
+    <p>Voer het master wachtwoord in om toegang te krijgen.</p>
+    <input type="password" id="pwInput" placeholder="Wachtwoord..." onkeydown="if(event.key==='Enter') checkPw()" />
+    <button onclick="checkPw()">Toegang</button>
+    <div class="back"><a href="https://stverstr.github.io">← Terug naar overzicht</a></div>
+  </div>
+</div>
+
+<!-- ACTUAL APP CONTENT -->
+<div id="app">
+  <!--
+    ██████████████████████████████████████████
+    ██  VERVANG ALLES HIERONDER MET DE APP  ██
+    ██████████████████████████████████████████
+  -->
+  <h1>__PROJECT_NAME__</h1>
+  <p>App content hier...</p>
+</div>
+
+<script>
+  // Master password hash (SHA-256) — ingesteld door Claude bij aanmaak
+  const MASTER_HASH = '750db0f147fb55c6755f5b3bb2606a35623b43d03c80056c48587dfa2df45c04';
+
+  async function sha256(str) {
+    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+  }
+
+  async function checkPw() {
+    const val = document.getElementById('pwInput').value;
+    const hash = await sha256(val);
+    if (hash === MASTER_HASH) {
+      sessionStorage.setItem('auth', '1');
+      document.getElementById('gate').style.display = 'none';
+      document.getElementById('app').style.display = 'block';
+      onAppReady();
+    } else {
+      const inp = document.getElementById('pwInput');
+      inp.classList.add('error');
+      inp.value = '';
+      setTimeout(() => inp.classList.remove('error'), 600);
+    }
+  }
+
+  // Check of al geauthenticeerd in deze sessie
+  window.addEventListener('DOMContentLoaded', () => {
+    if (sessionStorage.getItem('auth') === '1') {
+      document.getElementById('gate').style.display = 'none';
+      document.getElementById('app').style.display = 'block';
+      onAppReady();
+    }
+  });
+
+  // Wordt aangeroepen zodra de app zichtbaar is — zet hier initialisatie
+  function onAppReady() {
+    // App initialisatie hier
+  }
+</script>
+
+</body>
+</html>
