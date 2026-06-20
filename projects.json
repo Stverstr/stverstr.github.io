@@ -24,9 +24,9 @@
         "masterProtected": true,
         "appUsers": []
       },
-      "originalPrompt": "",
-      "functionalityDescription": "Strategische roadmap tool met tijdlijn, mijlpalen, doelstellingen en voortgangsopvolging. Gebruikers kunnen projecten aanmaken, beschrijvingen toevoegen en statussen bijhouden. Data wordt opgeslagen in Supabase.",
-      "tags": ["strategie", "planning", "supabase"]
+      "originalPrompt": "Bouw een roadmap tool met: storyboard (grid tracks × fasen), tijdlijn (Gantt), backlog, filters, en login via Supabase Auth. Daarna uitgebreid met: verticale tijdslijn na scroll/overlap fixes, activity detail tabs (Basis-info → Aanpak → Status → Taken → Stakeholders → Documenten), gebruikersbeheer (extra users toevoegen per klant), en een Governance tab met meeting-series, agenda per datum met topics en activiteitenlinks, en filter op storyboard/tijdlijn op basis van specifieke meeting.",
+      "functionalityDescription": "Strategische roadmap studio met storyboard (tracks × fasen), Gantt-tijdlijn, backlog en filters. Login via Supabase Auth. Activity detail scherm met tabstructuur. Gebruikersbeheer per klant. Governance module met meetings, agenda's en activiteitenkoppelingen. Gebouwd in meerdere sessies: initiële bouw → tijdslijn redesign → gebruikersbeheer → activity interface → governance tab.",
+      "tags": ["strategie", "planning", "supabase", "governance"]
     },
     {
       "id": "hackathon-arena",
