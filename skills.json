@@ -1,7 +1,7 @@
 {
   "meta": {
     "owner": "Stverstr",
-    "lastUpdated": "2026-06-20"
+    "lastUpdated": "2026-06-21"
   },
   "skills": [
     {
@@ -15,7 +15,30 @@
       "originalPrompt": "Bouw een stabiel, herhaalbaar systeem waarbij Claude een webproject automatisch online zet via GitHub Pages, de portfolio bijwerkt, en alle prompts en credentials bijhoudt. Eén master wachtwoord voor alle projecten. Aparte repo per project.",
       "createdAt": "2026-06-20",
       "installedAs": "anthropic-skills:deploy-project",
-      "tags": ["deploy", "github", "workflow", "portfolio"]
+      "tags": [
+        "deploy",
+        "github",
+        "workflow",
+        "portfolio"
+      ]
+    },
+    {
+      "id": "uat-test",
+      "displayName": "UAT Test",
+      "type": "skill",
+      "emoji": "🧪",
+      "description": "Loopt een gebouwde web-app als gebruiker door (UAT) vóór en na deploy: headless smoke test in de sandbox + live doorloop met Claude in Chrome.",
+      "whatItDoes": "Twee fases. Fase 1: opent de lokale index.html in een echte headless browser, passeert automatisch de wachtwoordgate, klikt door alle knoppen, vangt JS- en laadfouten, onderscheidt echte bugs van resources die de sandbox niet mag bereiken (CDN/Supabase), en maakt screenshots op mobiel + desktop. Fase 2: volwaardige acceptatietest op de live URL via Claude in Chrome, met een herbruikbare testpersona. Geeft een kort verdict: klaar om live of eerst fixen.",
+      "triggerPhrases": "test dit, loop er eens door, werkt dit, doe een UAT, check als gebruiker, klaar om live te zetten",
+      "originalPrompt": "Kan ik een agent of skill maken die mijn projecten telkens als UAT of user tester door de applicaties loopt die ik probeer te maken?",
+      "createdAt": "2026-06-21",
+      "installedAs": "anthropic-skills:uat-test",
+      "tags": [
+        "testing",
+        "uat",
+        "quality",
+        "workflow"
+      ]
     }
   ],
   "agents": []
