@@ -149,32 +149,6 @@
       ]
     },
     {
-      "id": "cg-loyalty-poc2",
-      "displayName": "CG Loyalty POC 2",
-      "repo": "cg-loyalty-poc2",
-      "url": "https://stverstr.github.io/cg-loyalty-poc2",
-      "description": "Tweede iteratie van het Colruyt Group loyalty concept.",
-      "thumbnail": "thumbnails/cg-loyalty-poc2.svg",
-      "status": "active",
-      "createdAt": "2026",
-      "hasDatabase": false,
-      "supabase": {
-        "projectUrl": "",
-        "anonKey": ""
-      },
-      "credentials": {
-        "masterProtected": true,
-        "appUsers": []
-      },
-      "originalPrompt": "",
-      "functionalityDescription": "",
-      "tags": [
-        "colruyt",
-        "loyalty",
-        "poc"
-      ]
-    },
-    {
       "id": "cyclonereis-2026",
       "displayName": "🚵 Cyclonereis Annecy 2026",
       "repo": "cyclonereis-2026",
