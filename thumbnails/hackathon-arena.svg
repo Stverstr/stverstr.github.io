@@ -1,28 +1,108 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1c0a00"/>
-      <stop offset="100%" style="stop-color:#431407"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eaf6f8"/>
+      <stop offset="100%" style="stop-color:#dff5f0"/>
+    </linearGradient>
+    <linearGradient id="nav" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f8fffe"/>
+    </linearGradient>
+    <linearGradient id="btn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00c2d1"/>
+      <stop offset="100%" style="stop-color:#00d9a8"/>
     </linearGradient>
   </defs>
-  <rect width="600" height="300" fill="url(#g)"/>
-  <!-- Scoreboard -->
-  <rect x="60" y="50" width="480" height="170" rx="12" fill="#1a0500" stroke="#ea580c" stroke-width="1.5"/>
-  <rect x="60" y="50" width="480" height="38" rx="12" fill="#9a3412"/>
-  <rect x="60" y="76" width="480" height="12" fill="#9a3412"/>
-  <text x="300" y="74" font-family="system-ui" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">⚔️ SCOREBORD</text>
+
+  <!-- Background -->
+  <rect width="600" height="300" fill="url(#bg)"/>
+
+  <!-- Nav bar -->
+  <rect x="0" y="0" width="600" height="36" fill="url(#nav)" stroke="#00c2d1" stroke-width="2"/>
+  <circle cx="20" cy="18" r="9" fill="url(#btn)"/>
+  <text x="35" y="23" font-family="system-ui" font-size="10" font-weight="800" fill="#1a2160">Hackathon Arena</text>
+  <rect x="105" y="8" width="42" height="20" rx="4" fill="rgba(0,194,209,0.12)"/>
+  <text x="126" y="22" font-family="system-ui" font-size="9" font-weight="700" fill="#00c2d1" text-anchor="middle">🏠 Info</text>
+  <text x="180" y="22" font-family="system-ui" font-size="9" fill="#7080a0" text-anchor="middle">🏆 Scorebord</text>
+  <text x="235" y="22" font-family="system-ui" font-size="9" fill="#7080a0" text-anchor="middle">🎡 Rad</text>
+
+  <!-- Scoreboard card -->
+  <rect x="20" y="48" width="250" height="145" rx="10" fill="#fff" stroke="rgba(26,33,96,0.09)" stroke-width="1"/>
+  <text x="30" y="68" font-family="system-ui" font-size="11" font-weight="700" fill="#1a2160">🏆 Scorebord</text>
+
   <!-- Team rows -->
-  <rect x="75" y="100" width="450" height="28" rx="6" fill="#7c2d12" opacity="0.6"/>
-  <text x="100" y="119" font-family="system-ui" font-size="11" fill="#fed7aa">🥇 Team Alpha</text>
-  <text x="490" y="119" font-family="system-ui" font-size="12" font-weight="700" fill="#fb923c" text-anchor="end">47 pts</text>
-  <rect x="75" y="134" width="450" height="25" rx="6" fill="#451a03" opacity="0.5"/>
-  <text x="100" y="151" font-family="system-ui" font-size="11" fill="#fdba74">🥈 Team Beta</text>
-  <text x="490" y="151" font-family="system-ui" font-size="11" fill="#f97316" text-anchor="end">38 pts</text>
-  <rect x="75" y="164" width="450" height="25" rx="6" fill="#1a0500" opacity="0.5"/>
-  <text x="100" y="181" font-family="system-ui" font-size="11" fill="#fed7aa" opacity="0.7">🥉 Team Gamma</text>
-  <text x="490" y="181" font-family="system-ui" font-size="11" fill="#f97316" text-anchor="end" opacity="0.7">29 pts</text>
-  <!-- Wheel hint -->
-  <circle cx="300" cy="248" r="22" fill="none" stroke="#ea580c" stroke-width="2" stroke-dasharray="5,3"/>
-  <text x="300" y="253" font-family="system-ui" font-size="16" text-anchor="middle">🎡</text>
-  <text x="300" y="286" font-family="system-ui" font-size="11" fill="#fb923c" text-anchor="middle" opacity="0.7">Hackathon Arena</text>
+  <rect x="28" y="74" width="234" height="30" rx="6" fill="rgba(255,215,0,0.07)" stroke="rgba(255,200,0,0.4)" stroke-width="1"/>
+  <rect x="32" y="82" width="4" height="14" rx="2" fill="#00c2d1"/>
+  <text x="42" y="95" font-family="system-ui" font-size="10" font-weight="700" fill="#1a2160">🥇 Team Alpha</text>
+  <text x="255" y="95" font-family="system-ui" font-size="11" font-weight="800" fill="#1a2160" text-anchor="end">47</text>
+
+  <rect x="28" y="108" width="234" height="26" rx="6" fill="rgba(26,33,96,0.03)"/>
+  <rect x="32" y="115" width="4" height="12" rx="2" fill="#00d9a8"/>
+  <text x="42" y="126" font-family="system-ui" font-size="10" fill="#1a2160">🥈 Team Beta</text>
+  <text x="255" y="126" font-family="system-ui" font-size="10" font-weight="700" fill="#7080a0" text-anchor="end">38</text>
+
+  <rect x="28" y="138" width="234" height="26" rx="6" fill="rgba(26,33,96,0.02)"/>
+  <rect x="32" y="145" width="4" height="12" rx="2" fill="#0082c0"/>
+  <text x="42" y="156" font-family="system-ui" font-size="10" fill="#7080a0">🥉 Team Gamma</text>
+  <text x="255" y="156" font-family="system-ui" font-size="10" font-weight="600" fill="#7080a0" text-anchor="end">29</text>
+
+  <rect x="28" y="168" width="234" height="22" rx="6" fill="rgba(26,33,96,0.02)"/>
+  <text x="42" y="183" font-family="system-ui" font-size="9" fill="#7080a0">Team Delta</text>
+  <text x="255" y="183" font-family="system-ui" font-size="9" fill="#7080a0" text-anchor="end">21</text>
+
+  <!-- Wheel card -->
+  <rect x="285" y="48" width="155" height="145" rx="10" fill="#fff" stroke="rgba(26,33,96,0.09)" stroke-width="1"/>
+  <text x="362" y="68" font-family="system-ui" font-size="10" font-weight="700" fill="#1a2160" text-anchor="middle">🎡 Rad van Fortuin</text>
+  <!-- Wheel circle -->
+  <circle cx="362" cy="130" r="48" fill="none" stroke="rgba(26,33,96,0.06)" stroke-width="1"/>
+  <path d="M362 82 L400 105 L400 155 L362 178 L324 155 L324 105 Z" fill="rgba(0,194,209,0.08)" stroke="#00c2d1" stroke-width="0.5"/>
+  <!-- Wheel segments -->
+  <path d="M362 130 L362 82 A48 48 0 0 1 403 106 Z" fill="#00c2d1" opacity="0.8"/>
+  <path d="M362 130 L403 106 A48 48 0 0 1 403 154 Z" fill="#00d9a8" opacity="0.8"/>
+  <path d="M362 130 L403 154 A48 48 0 0 1 362 178 Z" fill="#1a6bd4" opacity="0.7"/>
+  <path d="M362 130 L362 178 A48 48 0 0 1 321 154 Z" fill="#0090d0" opacity="0.8"/>
+  <path d="M362 130 L321 154 A48 48 0 0 1 321 106 Z" fill="#00c499" opacity="0.8"/>
+  <path d="M362 130 L321 106 A48 48 0 0 1 362 82 Z" fill="#1a8cd0" opacity="0.7"/>
+  <circle cx="362" cy="130" r="12" fill="#fff" stroke="#00c2d1" stroke-width="2"/>
+  <text x="362" y="134" font-family="system-ui" font-size="9" text-anchor="middle">⚡</text>
+  <!-- Pointer -->
+  <polygon points="362,76 357,68 367,68" fill="#1a2160"/>
+
+  <!-- Game result pill -->
+  <rect x="455" y="48" width="130" height="145" rx="10" fill="#fff" stroke="rgba(26,33,96,0.09)" stroke-width="1"/>
+  <text x="519" y="70" font-family="system-ui" font-size="10" font-weight="700" fill="#1a2160" text-anchor="middle">⚔️ Actief spel</text>
+  <rect x="465" y="78" width="110" height="42" rx="8" fill="rgba(0,194,209,0.08)" stroke="rgba(0,194,209,0.2)" stroke-width="1"/>
+  <text x="519" y="96" font-family="system-ui" font-size="16" text-anchor="middle">🍬</text>
+  <text x="519" y="112" font-family="system-ui" font-size="9" font-weight="700" fill="#1a2160" text-anchor="middle">Marshmallows</text>
+  <text x="519" y="133" font-family="system-ui" font-size="8" fill="#7080a0" text-anchor="middle">Alpha ⚔️ Beta</text>
+
+  <!-- Egg tracker pills -->
+  <rect x="465" y="142" width="50" height="22" rx="6" fill="rgba(0,217,168,0.12)" stroke="rgba(0,217,168,0.3)" stroke-width="1"/>
+  <text x="490" y="157" font-family="system-ui" font-size="9" fill="#009970" text-anchor="middle">🥚 Alive</text>
+  <rect x="520" y="142" width="50" height="22" rx="6" fill="rgba(220,50,50,0.08)" stroke="rgba(220,50,50,0.2)" stroke-width="1"/>
+  <text x="545" y="157" font-family="system-ui" font-size="9" fill="#c02020" text-anchor="middle">🥚 Dood</text>
+
+  <!-- Easter egg hint -->
+  <rect x="465" y="168" width="110" height="20" rx="5" fill="rgba(255,214,0,0.1)"/>
+  <text x="519" y="181" font-family="system-ui" font-size="8" fill="#a06000" text-anchor="middle">🐣 20 Easter eggs verborgen</text>
+
+  <!-- Bottom bar: live pill + score summary -->
+  <rect x="20" y="205" width="565" height="80" rx="10" fill="#fff" stroke="rgba(26,33,96,0.06)" stroke-width="1"/>
+  <rect x="30" y="215" width="70" height="20" rx="99" fill="rgba(0,217,168,0.12)" stroke="rgba(0,217,168,0.3)" stroke-width="1"/>
+  <circle cx="42" cy="225" r="4" fill="#00d9a8"/>
+  <text x="72" y="229" font-family="system-ui" font-size="8" font-weight="700" fill="#00d9a8" text-anchor="middle">LIVE</text>
+  <text x="120" y="229" font-family="system-ui" font-size="9" fill="#7080a0">Supabase realtime · Jury login · Bonuspunten · Spelbeheer</text>
+  <!-- Point summary -->
+  <rect x="30" y="241" width="80" height="34" rx="6" fill="rgba(0,217,168,0.08)"/>
+  <text x="70" y="255" font-family="system-ui" font-size="9" fill="#7080a0" text-anchor="middle">Uitdaging winnen</text>
+  <text x="70" y="269" font-family="system-ui" font-size="12" font-weight="800" fill="#009970" text-anchor="middle">+3 pts</text>
+  <rect x="118" y="241" width="80" height="34" rx="6" fill="rgba(0,217,168,0.08)"/>
+  <text x="158" y="255" font-family="system-ui" font-size="9" fill="#7080a0" text-anchor="middle">Ei levend</text>
+  <text x="158" y="269" font-family="system-ui" font-size="12" font-weight="800" fill="#009970" text-anchor="middle">+6 pts</text>
+  <rect x="206" y="241" width="80" height="34" rx="6" fill="rgba(0,217,168,0.08)"/>
+  <text x="246" y="255" font-family="system-ui" font-size="9" fill="#7080a0" text-anchor="middle">Easter egg</text>
+  <text x="246" y="269" font-family="system-ui" font-size="12" font-weight="800" fill="#009970" text-anchor="middle">+1 pt</text>
+  <rect x="294" y="241" width="80" height="34" rx="6" fill="rgba(220,50,50,0.06)"/>
+  <text x="334" y="255" font-family="system-ui" font-size="9" fill="#7080a0" text-anchor="middle">Weigeren</text>
+  <text x="334" y="269" font-family="system-ui" font-size="12" font-weight="800" fill="#c02020" text-anchor="middle">–1 pt</text>
 </svg>

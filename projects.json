@@ -69,7 +69,7 @@
       "description": "Team challenge platform voor hackathons. Teams dagen elkaar uit, een jury beslist de winnaar via een rad van fortuin.",
       "thumbnail": "thumbnails/hackathon-arena.svg",
       "status": "active",
-      "createdAt": "2026",
+      "createdAt": "2026-06",
       "hasDatabase": true,
       "supabase": {
         "projectUrl": "https://uvodxrrxsxnjlinqrjlw.supabase.co",
@@ -85,13 +85,15 @@
           }
         ]
       },
-      "originalPrompt": "",
-      "functionalityDescription": "Live hackathon platform waarbij teams elkaar kunnen uitdagen. Scorebord toont rangschikking. Jury draait rad van fortuin om spelletje te kiezen. Ei-tracker volgt teamei op. Easter eggs verborgen doorheen de app. Jury login vereist. Data via Supabase.",
+      "originalPrompt": "Bouw een live hackathon challenge platform waarbij teams elkaar kunnen uitdagen in mini-spelletjes. Het systeem werkt met een scorebord (enkel teams boven je uitdagen), een digitaal rad van fortuin dat random een spel kiest uit 29 uitdagingen (marshmallows, eiwitkloppen, beerpong, Uno, snake, wallsit…), en een jurysysteem dat de winnaar registreert (+3 punten). Voeg later toe: ei-tracker per team (ei levend houden = +6 punten, personaliseerbaar), 20 verborgen Easter eggs in de app (eerste vinder = +1 punt), jury bonus/straf punten, spelbeheer (opslaan/herstellen), digitaal wiel voor iedereen zichtbaar maar winnaar registratie enkel voor jury. Daarna: alle verwijzingen naar HRlinkIT verwijderen en er een generieke tool van maken.",
+      "functionalityDescription": "Live hackathon platform waarbij teams (max. 5 uitdagingen) enkel teams boven hen mogen uitdagen. 29 mini-spelletjes geselecteerd via digitaal rad van fortuin. Scorebord met realtime ranking. Egg tracker: elk team heeft een ei, levend = +6 punten, breekbaar door anderen, personaliseerbaar. 20 verborgen Easter eggs in de app (click-triggers, toetsenbord-combos, rechts-klik). Jury login via Supabase Edge Functions. Bonus/straf punten toekennen. Spel opslaan en herstellen. Alle data live gesynchroniseerd via Supabase realtime.",
       "tags": [
         "hackathon",
         "gamification",
         "supabase",
-        "live"
+        "live",
+        "team-challenges",
+        "easter-eggs"
       ]
     },
     {
