@@ -97,33 +97,6 @@
       ]
     },
     {
-      "id": "colruyt-loyalty-poc",
-      "displayName": "Xtra Loyalty POC",
-      "repo": "colruyt-loyalty-poc",
-      "url": "https://stverstr.github.io/colruyt-loyalty-poc",
-      "description": "Interactieve presentatie van het Xtra Loyalty concept voor Colruyt Group. Toont perspectieven van klant, marketeer en duurzaamheidsmanager.",
-      "thumbnail": "thumbnails/colruyt-loyalty-poc.svg",
-      "status": "active",
-      "createdAt": "2026",
-      "hasDatabase": false,
-      "supabase": {
-        "projectUrl": "",
-        "anonKey": ""
-      },
-      "credentials": {
-        "masterProtected": true,
-        "appUsers": []
-      },
-      "originalPrompt": "Bouw een interactief proof-of-concept voor een nieuw geintegreerd loyaliteitsprogramma voor Colruyt Group, gebouwd rond het Xtra-ecosysteem. Het concept moet vier perspectieven tonen: (1) de klant die zijn Xtratjes ziet groeien via een app-simulatie, (2) de merk-marketeer die loyalty-mechanismen beheert per merk (Colruyt, OKay, Bio-Planet, Jims, Newpharma), (3) het Colruyt Group-team met een intern dashboard over doelstellingen en samenwerking, en (4) een groepsoverview met impact op duurzaamheid en financiele resultaten. Inclusief een aparte impact-analyse pagina en een management summary. Alles in een strak visueel design in de Xtra-stijl (donker paars, Inter font, kaarten per merk).",
-      "functionalityDescription": "Multi-perspectief loyaliteits-POC met 9 paginas: index (overzicht), klantview (Xtra app simulatie), marketeerview, teamview, groepsoverview, impact-dashboard, impact-analyse, summary en xtra-app. Auth via master wachtwoord (SHA-256).",
-      "tags": [
-        "colruyt",
-        "loyalty",
-        "presentatie",
-        "poc"
-      ]
-    },
-    {
       "id": "markscan-productiehuizen",
       "displayName": "Markscan Productiehuizen",
       "repo": "markscan-productiehuizen",
