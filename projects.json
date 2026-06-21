@@ -3,7 +3,7 @@
     "owner": "Stverstr",
     "masterPasswordHash": "750db0f147fb55c6755f5b3bb2606a35623b43d03c80056c48587dfa2df45c04",
     "githubPagesBase": "https://stverstr.github.io",
-    "lastUpdated": "2026-06-20"
+    "lastUpdated": "2026-06-21"
   },
   "projects": [
     {
@@ -226,6 +226,35 @@
         "sport",
         "Alpen",
         "Annecy"
+      ]
+    },
+    {
+      "id": "colruyt-loyalty",
+      "displayName": "Colruyt Group Loyalty POC",
+      "repo": "colruyt-loyalty",
+      "url": "https://stverstr.github.io/colruyt-loyalty",
+      "description": "Interactief proof-of-concept voor een geintegreerd loyaliteitsprogramma voor Colruyt Group. Toont klant-, marketer-, team- en groepsperspectief op het Xtra-ecosysteem.",
+      "thumbnail": "thumbnails/colruyt-loyalty.svg",
+      "status": "active",
+      "createdAt": "2026-06-21",
+      "hasDatabase": false,
+      "supabase": {
+        "projectUrl": "",
+        "anonKey": ""
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": []
+      },
+      "originalPrompt": "Bouw een interactief POC voor een geintegreerd Colruyt Group loyaliteitsprogramma met meerdere perspectieven: klantview (Xtra app), marketeerview, teamview en groepsoverview. Inclusief impact-dashboard en samenvatting.",
+      "functionalityDescription": "Multi-perspectief loyaliteits-POC met 9 paginas: index (overzicht), klantview (Xtra app simulatie), marketeerview, teamview, groepsoverview, impact-dashboard, impact-analyse, summary en xtra-app. Auth via master wachtwoord (SHA-256).",
+      "tags": [
+        "loyalty",
+        "colruyt",
+        "xtra",
+        "poc",
+        "strategie",
+        "retail"
       ]
     }
   ]
