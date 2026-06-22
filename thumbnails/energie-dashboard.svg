@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240">
+  <rect width="400" height="240" fill="#0d1117"/>
+  <!-- Chart bars -->
+  <rect x="30" y="140" width="22" height="60" rx="3" fill="#3fb950"/>
+  <rect x="58" y="130" width="22" height="70" rx="3" fill="#3fb950"/>
+  <rect x="86" y="120" width="22" height="80" rx="3" fill="#d29922"/>
+  <rect x="114" y="100" width="22" height="100" rx="3" fill="#d29922"/>
+  <rect x="142" y="80" width="22" height="120" rx="3" fill="#f85149"/>
+  <rect x="170" y="60" width="22" height="140" rx="3" fill="#f85149"/>
+  <rect x="198" y="50" width="22" height="150" rx="3" fill="#58a6ff" opacity=".9"/>
+  <rect x="226" y="70" width="22" height="130" rx="3" fill="#f85149"/>
+  <rect x="254" y="90" width="22" height="110" rx="3" fill="#d29922"/>
+  <rect x="282" y="110" width="22" height="90" rx="3" fill="#d29922"/>
+  <rect x="310" y="130" width="22" height="70" rx="3" fill="#3fb950"/>
+  <rect x="338" y="145" width="22" height="55" rx="3" fill="#3fb950"/>
+  <!-- Status pill -->
+  <rect x="30" y="14" width="160" height="30" rx="15" fill="#0d2a12" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="110" y="34" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#3fb950">☀️ Overschot — Laad nu</text>
+  <!-- Price badge -->
+  <rect x="210" y="14" width="80" height="30" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="250" y="25" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#8b949e">EPEX NU</text>
+  <text x="250" y="38" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#3fb950">€0.04/kWh</text>
+  <!-- Power badge -->
+  <rect x="300" y="14" width="80" height="30" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="340" y="25" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#8b949e">NETBALANS</text>
+  <text x="340" y="38" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#3fb950">−820 W</text>
+  <!-- Label -->
+  <text x="200" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#8b949e">⚡ Energie Dashboard</text>
+</svg>

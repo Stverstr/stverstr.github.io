@@ -203,6 +203,34 @@
         "strategie",
         "retail"
       ]
+    },
+    {
+      "id": "energie-dashboard",
+      "displayName": "Energie Dashboard",
+      "repo": "energie-dashboard",
+      "url": "https://stverstr.github.io/energie-dashboard",
+      "description": "Realtime overzicht van EPEX spotprijzen, HomeWizard P1 netbalans en slim laadadvies voor Tesla.",
+      "thumbnail": "thumbnails/energie-dashboard.svg",
+      "status": "active",
+      "createdAt": "2026-06-22",
+      "hasDatabase": false,
+      "supabase": {
+        "projectUrl": "",
+        "anonKey": ""
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": []
+      },
+      "originalPrompt": "Bouw een energie dashboard dat EPEX spotprijzen, HomeWizard P1 netbalans en Tesla laadadvies combineert.",
+      "functionalityDescription": "Toont per uur de Belgische EPEX elektriciteitsprijs via Elia OpenData, haalt realtime netbalans op via HomeWizard P1 lokale API, geeft kleurgecodeerd laadadvies voor Tesla en heeft een 24u prijsgrafiek.",
+      "tags": [
+        "energie",
+        "solar",
+        "tesla",
+        "homewizard",
+        "epex"
+      ]
     }
   ]
 }
