@@ -7,6 +7,32 @@
   },
   "projects": [
     {
+      "id": "vitu",
+      "displayName": "VITU",
+      "repo": "vitu",
+      "url": "https://stverstr.github.io/vitu",
+      "description": "Landingspagina voor VITU — een besloten meeting- en ontmoetingsruimte in Ursel voor kleine teams die ruimte willen voor diepgaande gesprekken en workshops.",
+      "thumbnail": "thumbnails/vitu.svg",
+      "status": "active",
+      "createdAt": "2025-06-23",
+      "hasDatabase": false,
+      "supabase": {
+        "projectUrl": "",
+        "anonKey": ""
+      },
+      "credentials": {
+        "masterProtected": false,
+        "appUsers": []
+      },
+      "originalPrompt": "Bouw een landingspagina voor VITU (Villa te Ursel), een besloten meeting- en ontmoetingsruimte voor kleine teams. Nederlandstalig, deploy via GitHub Pages.",
+      "functionalityDescription": "Marketinglandingspagina met hero, gallerij, faciliteiten, formules/pricing en contactformulier via mailto.",
+      "tags": [
+        "marketing",
+        "venue",
+        "landing-page"
+      ]
+    },
+    {
       "id": "alpenreis-2026",
       "displayName": "Alpenreis 2026",
       "repo": "alpenreis-2026",
