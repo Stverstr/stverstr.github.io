@@ -7,6 +7,33 @@
   },
   "projects": [
     {
+      "id": "skivakantie-2026",
+      "displayName": "Skivakantie 2026",
+      "repo": "skivakantie-2026",
+      "url": "https://stverstr.github.io/skivakantie-2026",
+      "description": "Familievoorstel voor skivakantie kerstvakantie 2026 — Sankt Anton am Arlberg. Met treinreis, chaletvergelijking en totale kostenoverzicht.",
+      "thumbnail": "thumbnails/skivakantie-2026.svg",
+      "status": "active",
+      "createdAt": "2026-06-28",
+      "hasDatabase": false,
+      "supabase": {
+        "projectUrl": "",
+        "anonKey": ""
+      },
+      "credentials": {
+        "masterProtected": false,
+        "appUsers": []
+      },
+      "originalPrompt": "Maak een mooie publieke website met het skivakantie voorstel voor de familie, zonder wachtwoord, met chalets, treininfo en totale kost.",
+      "functionalityDescription": "Publieke informatieve website met het volledige skivakantie voorstel: vereisten, opties, keuze voor St. Anton, nachttrein, 3 chaletopties, skipas en totale kost.",
+      "tags": [
+        "vakantie",
+        "ski",
+        "familie",
+        "presentatie"
+      ]
+    },
+    {
       "id": "vitu",
       "displayName": "VITU",
       "repo": "vitu",
