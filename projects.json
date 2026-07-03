@@ -7,6 +7,33 @@
   },
   "projects": [
     {
+      "id": "ai-for-sustainability",
+      "displayName": "AI for Sustainability",
+      "repo": "ai-for-sustainability",
+      "url": "https://stverstr.github.io/ai-for-sustainability",
+      "description": "Argumentatiesite voor de AI Support Group van Colruyt Group: Claude AI inzetten binnen Sustainability voor productdata-verrijking, Board-ontwikkeling en analisten-inzichten op Snowflake, met heldere guardrails.",
+      "thumbnail": "thumbnails/ai-for-sustainability.svg",
+      "status": "active",
+      "createdAt": "2026-07-03",
+      "hasDatabase": false,
+      "supabase": {
+        "projectUrl": "",
+        "anonKey": ""
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": []
+      },
+      "originalPrompt": "Nieuw project 'AI For Sustainability': een korte site met de argumentatie om Claude AI te gebruiken binnen Sustainability (Colruyt Group), voor 3 use cases — data verrijking, Board low-code ontwikkeling, en analisten-inzichten op Snowflake — om de AI support group te overtuigen.",
+      "functionalityDescription": "Eén-pagina argumentatiesite in Colruyt Group huisstijl met de 3 use cases, een guardrails-tabel (wat wel/niet gedeeld wordt met AI), de 3 kernvragen aan de AI Support Group en een voorgestelde gefaseerde aanpak/samenwerkingsmodel.",
+      "tags": [
+        "sustainability",
+        "ai",
+        "colruyt-group",
+        "voorstel"
+      ]
+    },
+    {
       "id": "skivakantie-2026",
       "displayName": "Skivakantie 2026",
       "repo": "skivakantie-2026",
