@@ -3,7 +3,7 @@
     "owner": "Stverstr",
     "masterPasswordHash": "750db0f147fb55c6755f5b3bb2606a35623b43d03c80056c48587dfa2df45c04",
     "githubPagesBase": "https://stverstr.github.io",
-    "lastUpdated": "2026-06-21"
+    "lastUpdated": "2026-07-05"
   },
   "projects": [
     {
@@ -310,6 +310,32 @@
         "tesla",
         "homewizard",
         "epex"
+      ]
+    },
+    {
+      "id": "kindregeling",
+      "displayName": "Kindregeling",
+      "repo": "kindregeling",
+      "url": "https://stverstr.github.io/kindregeling",
+      "description": "Gedeelde tijdlijn en beslissingenlog van de kindregeling tussen Stijn en Marlies — dag-per-dag overzicht wie de kinderen heeft, plus een log van gestelde vragen en genomen beslissingen.",
+      "thumbnail": "thumbnails/kindregeling.svg",
+      "status": "active",
+      "createdAt": "2026-07-05",
+      "hasDatabase": false,
+      "supabase": {
+        "projectUrl": "",
+        "anonKey": ""
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": []
+      },
+      "originalPrompt": "Ik had graag de Kindregeling visibel gemaakt tussen mij en mijn ex (Marlies). Ik linkte al de ouderschapsovereenkomst, maar ook de zomerplanning. Simpele visuele webpagina met dag-per-dag tijdlijn (scrollbaar, start vorige week) en een tab met vraag & beslissing log.",
+      "functionalityDescription": "Twee tabs: (1) Tijdlijn — dag-per-dag kalender met kleurcodes per ouder (normaal/gevraagd weekend/compensatie/vakantie), automatisch berekend op basis van de even/oneven weekregeling incl. de omwisseling vanaf 4 januari 2027, met vaste uitzonderingen voor de kerstvakantie 2026 en 2 weekendwissels. Start altijd op vorige week, oneindig scrollbaar in de toekomst. (2) Log — chronologisch overzicht van vragen tussen de ouders en de genomen beslissingen.",
+      "tags": [
+        "gezin",
+        "planning",
+        "co-ouderschap"
       ]
     }
   ]
