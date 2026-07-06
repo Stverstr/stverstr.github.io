@@ -337,6 +337,33 @@
         "planning",
         "co-ouderschap"
       ]
+    },
+    {
+      "id": "jobsite-cg",
+      "displayName": "CG Jobs Reimagined",
+      "repo": "jobsite-cg",
+      "url": "https://stverstr.github.io/jobsite-cg",
+      "description": "Concept-herontwerp van de Colruyt Group jobsite: 299 echte vacatures op een interactieve kaart met clustering, live filters per vakgebied/merk/provincie, count-up cijfers en een Supabase-databank met lokale fallback.",
+      "thumbnail": "thumbnails/jobsite-cg.svg",
+      "status": "active",
+      "createdAt": "2026-07-06",
+      "hasDatabase": true,
+      "supabase": {
+        "projectUrl": "https://uvodxrrxsxnjlinqrjlw.supabase.co",
+        "anonKey": "sb_publishable_is9JHVr3f7hRfZh31WtLvA_sz5ymhQW"
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": []
+      },
+      "originalPrompt": "Kan je de volledige jobsite van CG herbouwen: https://jobs.colruytgroup.com/nl. Het moet heel veel aantrekkelijker, dynamischer zijn (met bijvoorbeeld een mooie kaart met de vacatures, echte dynamische visuals enz). Ik verwacht wel dat je alle vacatures in een database oplaadt, zodat je niets vergeet. En ook de tekstuele pagina's mooier, korter, aantrekkelijker maakt. Laat je gaan, het moet fantastisch zijn.",
+      "functionalityDescription": "One-page jobsite met wachtwoordgate. Laadt 299 vacatures live uit Supabase (tabel cg_vacatures, publiek leesbaar) met ingebouwde JSON-snapshot als fallback. Interactieve Leaflet-kaart met markerclustering en gekleurde stippen per vakgebied; filters op zoekterm, vakgebied, merk, provincie en jobtype die kaart én kaartjeslijst live bijwerken; vakgebied-tegels met live tellers; count-up statistieken; vacatures-per-provincie grafiek; typemachine-hero; 'Verras me'-knop die naar een willekeurige vacature vliegt. Elke vacature linkt naar de officiële sollicitatiepagina.",
+      "tags": [
+        "kaart",
+        "supabase",
+        "scraping",
+        "dashboard"
+      ]
     }
   ]
 }
