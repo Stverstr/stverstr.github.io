@@ -3,7 +3,7 @@
     "owner": "Stverstr",
     "masterPasswordHash": "750db0f147fb55c6755f5b3bb2606a35623b43d03c80056c48587dfa2df45c04",
     "githubPagesBase": "https://stverstr.github.io",
-    "lastUpdated": "2026-07-05"
+    "lastUpdated": "2026-07-09"
   },
   "projects": [
     {
@@ -258,9 +258,9 @@
     {
       "id": "colruyt-loyalty",
       "displayName": "Colruyt Group Loyalty POC",
-      "repo": "colruyt-loyalty",
-      "url": "https://stverstr.github.io/colruyt-loyalty",
-      "description": "Interactief proof-of-concept voor een geintegreerd loyaliteitsprogramma voor Colruyt Group. Toont klant-, marketer-, team- en groepsperspectief op het Xtra-ecosysteem.",
+      "repo": "colruyt-loyalty-poc",
+      "url": "https://stverstr.github.io/colruyt-loyalty-poc",
+      "description": "Interactief proof-of-concept voor een geintegreerd loyaliteitsprogramma voor Colruyt Group. Vijf perspectieven op het Xtra-ecosysteem: klant, merk-marketeer, groep-marketeer, duurzaamheids-manager en regio & winkel (Regio Challenge 2026).",
       "thumbnail": "thumbnails/colruyt-loyalty.svg",
       "status": "active",
       "createdAt": "2026-06-21",
@@ -271,10 +271,16 @@
       },
       "credentials": {
         "masterProtected": true,
-        "appUsers": []
+        "appUsers": [
+          {
+            "role": "Gedeeld wachtwoord (werkgroep)",
+            "username": "",
+            "password": "CG Loyalty Stijn"
+          }
+        ]
       },
       "originalPrompt": "Bouw een interactief proof-of-concept voor een nieuw geintegreerd loyaliteitsprogramma voor Colruyt Group, gebouwd rond het Xtra-ecosysteem. Het concept moet vier perspectieven tonen: (1) de klant die zijn Xtratjes ziet groeien via een app-simulatie, (2) de merk-marketeer die loyalty-mechanismen beheert per merk (Colruyt, OKay, Bio-Planet, Jims, Newpharma), (3) het Colruyt Group-team met een intern dashboard over doelstellingen en samenwerking, en (4) een groepsoverview met impact op duurzaamheid en financiele resultaten. Inclusief een aparte impact-analyse pagina en een management summary. Alles in één gedeelde webapplicatie met een strak visueel design in de Xtra-stijl (donker paars, Inter font, kaarten per merk).",
-      "functionalityDescription": "Multi-perspectief loyaliteits-POC met 9 paginas: index (overzicht), klantview (Xtra app simulatie), marketeerview, teamview, groepsoverview, impact-dashboard, impact-analyse, summary en xtra-app. Auth via master wachtwoord (SHA-256).",
+      "functionalityDescription": "Multi-perspectief loyaliteits-POC: index (overzicht), klantview (Xtra app simulatie), marketeerview, groepsview, impact-dashboard, impact-analyse, Regio Challenge 2026 (13 regio's, Belgie-kaart), summary en xtra-app. Auth via master wachtwoord of gedeeld wachtwoord 'CG Loyalty Stijn' (SHA-256).",
       "tags": [
         "loyalty",
         "colruyt",
