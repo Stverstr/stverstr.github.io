@@ -370,6 +370,36 @@
         "scraping",
         "dashboard"
       ]
+    },
+    {
+      "id": "dehert2026",
+      "displayName": "Grote Sluitingsprijs Café De Hert 2026",
+      "repo": "dehert2026",
+      "url": "https://stverstr.github.io/dehert2026",
+      "description": "Teaser en live wedstrijd-app voor de Grote Sluitingsprijs Café De Hert 2026 van De Baroudeurs & Baroudellen: geheime rondes, jurypanel met omkoping en kliklijn, beraadslaging en slotceremonie — georkestreerde chaos langs de Vaart.",
+      "thumbnail": "thumbnails/dehert2026.svg",
+      "status": "active",
+      "createdAt": "2026-07-11",
+      "hasDatabase": true,
+      "supabase": {
+        "projectUrl": "https://uvodxrrxsxnjlinqrjlw.supabase.co",
+        "anonKey": "sb_publishable_is9JHVr3f7hRfZh31WtLvA_sz5ymhQW"
+      },
+      "credentials": {
+        "masterProtected": false,
+        "appUsers": [
+          "teamcodes + jurycode + oppercode (in de app beheerd)"
+        ]
+      },
+      "originalPrompt": "Vorig jaar heb ik de grote sluitingsprijs cafe de hert georganiseerd. Dit jaar wil ik dat terug doen. Ik wil een website/applicatie die de hele wedstrijd begeleidt: voor de teams (geheime opdrachten), voor de jury (rondes, puntentelling, omkoping, kliklijn) en de finale beraadslaging met verzegelde Grote Prijs. Plus een dramatische teaser met poll.",
+      "functionalityDescription": "index.html = filmische teaser met poll (Baroudellen-formule); app.html = koerscentrale met rollen (team/jury/opperjury/groot scherm), realtime via Supabase; uitslag.html = geheime pollresultaten voor de opperjury.",
+      "tags": [
+        "event",
+        "wielrennen",
+        "supabase",
+        "realtime",
+        "spel"
+      ]
     }
   ]
 }
