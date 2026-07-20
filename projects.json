@@ -3,7 +3,7 @@
     "owner": "Stverstr",
     "masterPasswordHash": "750db0f147fb55c6755f5b3bb2606a35623b43d03c80056c48587dfa2df45c04",
     "githubPagesBase": "https://stverstr.github.io",
-    "lastUpdated": "2026-07-09"
+    "lastUpdated": "2026-07-20"
   },
   "projects": [
     {
@@ -399,6 +399,33 @@
         "supabase",
         "realtime",
         "spel"
+      ]
+    },
+    {
+      "id": "health-cg",
+      "displayName": "Health CG",
+      "repo": "health-cg",
+      "url": "https://stverstr.github.io/health-cg",
+      "description": "Strategiedocumenten voor de Health-ambitie van Colruyt Group: het organisatie- & advisory-voorstel, het AI-first sprintplan en het werkoverleg-werkdocument met Lisa (sponsor) — drie onderling gelinkte pagina's achter één wachtwoordgate.",
+      "thumbnail": "thumbnails/health-cg.svg",
+      "status": "active",
+      "createdAt": "2026-07-20",
+      "hasDatabase": false,
+      "supabase": {
+        "projectUrl": "",
+        "anonKey": ""
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": []
+      },
+      "originalPrompt": "Kan je die hele websites allemaal testen en deployen?",
+      "functionalityDescription": "Drie zelfstandige HTML-pagina's in Colruyt Group-huisstijl (teal, Calibri, dark mode): (1) hoofddocument met organisatievarianten, aanbeveling, Health Advisory-concept, roadmap naar 2028 en debatpunten; (2) gamified 4-weken AI-first sprintplan; (3) werkoverleg-werkdocument met tabs voor agenda, uitgewerkte topics, actielijst en archief per overleg. index.html verwijst door naar het hoofddocument; navigatie tussen de pagina's onderling.",
+      "tags": [
+        "colruyt",
+        "health",
+        "strategie",
+        "werkdocument"
       ]
     }
   ]
