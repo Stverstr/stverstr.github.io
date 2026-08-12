@@ -433,7 +433,7 @@
       "displayName": "De Bergtrui",
       "repo": "bergtrui",
       "url": "https://stverstr.github.io/bergtrui",
-      "description": "Avondcompetitie in Tour-stijl voor 10 vrienden in de bergen: 10 etappes, live scorebord met gele trui, berg- en groen klassement, en een jurycockpit.",
+      "description": "Avondcompetitie in Tour-stijl voor 10 vrienden in de bergen: 10 etappes, live scorebord met gele trui, berg- en groen klassement, en een jurycockpit. Vrij toegankelijk voor renners; jurycockpit achter PIN.",
       "thumbnail": "thumbnails/bergtrui.svg",
       "status": "active",
       "createdAt": "2026-08-12",
@@ -443,7 +443,7 @@
         "anonKey": "sb_publishable_c2OQQO1LB81Fcl7E-94Fig_g7KponDq"
       },
       "credentials": {
-        "masterProtected": true,
+        "masterProtected": false,
         "appUsers": [
           "jury (PIN 1903)"
         ]
