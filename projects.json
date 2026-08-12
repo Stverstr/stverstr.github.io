@@ -427,6 +427,36 @@
         "strategie",
         "werkdocument"
       ]
+    },
+    {
+      "id": "bergtrui",
+      "displayName": "De Bergtrui",
+      "repo": "bergtrui",
+      "url": "https://stverstr.github.io/bergtrui",
+      "description": "Avondcompetitie in Tour-stijl voor 10 vrienden in de bergen: 10 etappes, live scorebord met gele trui, berg- en groen klassement, en een jurycockpit.",
+      "thumbnail": "thumbnails/bergtrui.svg",
+      "status": "active",
+      "createdAt": "2026-08-12",
+      "hasDatabase": true,
+      "supabase": {
+        "projectUrl": "https://mpjvomlfxrlckglfsnik.supabase.co",
+        "anonKey": "sb_publishable_c2OQQO1LB81Fcl7E-94Fig_g7KponDq"
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": [
+          "jury (PIN 1903)"
+        ]
+      },
+      "originalPrompt": "Ik wil graag een wedstrijd organiseren met minimum 10 spelletjes die we s'avonds kunnen spelen met een vriendengroep in de bergen. We zitten in een huisje met 10 vrienden. Allemaal fietsliefhebbers. Dat huisje heeft een zwembad, pentanquebaan en grote helling waarvan we dingen kunnen doen. We drinken graag iets, we gaan BbQ'en, we hebben ook een aantal gezelschapspellen. Het moet zeer gevarieerd zijn en duurt de hele avond. Ik wil een online website met daarop een scorebord. Waar we misschien spel per spel teams kunnen bepalen. Het moet een jury login hebben om de personen te kunnen toevoegen en de verschillende spellen te kunnen zien. Na elk spel geeft de jury het volgende spel vrij. Dan kunnen de deelnemers de regels lezen en het spel spelen, al dan niet in tijdelijke teams, door de jury of automatisch vast te leggen. Het is allemaal mobiel te spelen.",
+      "functionalityDescription": "Mobiel scorebord met 3 klassementen (geel/berg/groen), 10 vooraf gevulde etappes rond petanque, zwembad, helling, BBQ en gezelschapsspelen. Jury-login (PIN) om renners in te schrijven, etappes vrij te geven, teams te loten of handmatig te schuiven, uitslagen te tikken en etappes te bewerken. Data live gedeeld via Supabase, verversing elke 5 seconden.",
+      "tags": [
+        "spel",
+        "vrienden",
+        "scorebord",
+        "supabase",
+        "mobiel"
+      ]
     }
   ]
 }

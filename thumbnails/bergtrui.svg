@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240">
+  <defs>
+    <pattern id="polka" width="16" height="12" patternUnits="userSpaceOnUse">
+      <rect width="16" height="12" fill="#ffffff"/>
+      <circle cx="4" cy="3" r="2.6" fill="#e04338"/>
+      <circle cx="12" cy="9" r="2.6" fill="#e04338"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="240" fill="#15181f"/>
+  <polygon points="0,240 110,90 180,170 260,60 400,240" fill="#232837"/>
+  <polygon points="150,240 260,60 400,240" fill="#1d212b"/>
+  <rect x="0" y="0" width="400" height="14" fill="url(#polka)"/>
+  <circle cx="330" cy="55" r="22" fill="#ffd23f"/>
+  <text x="30" y="150" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900" fill="#ffffff">🏔️ DE BERGTRUI</text>
+  <text x="32" y="180" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ffd23f">10 ETAPPES · ÉÉN AVOND · ÉÉN GELE TRUI</text>
+  <line x1="30" y1="205" x2="370" y2="205" stroke="#ffd23f" stroke-width="3" stroke-dasharray="14 10" opacity="0.5"/>
+</svg>
