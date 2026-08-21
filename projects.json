@@ -457,6 +457,37 @@
         "supabase",
         "mobiel"
       ]
+    },
+    {
+      "id": "health-roadmap",
+      "displayName": "CG Health Roadmap",
+      "repo": "health-roadmap",
+      "url": "https://stverstr.github.io/health-roadmap",
+      "description": "Storyboard van alle Health-activiteiten van Colruyt Group (streams × fasen, drag & drop, status en gezondheid per activiteit) plus de governance: Health Sturing en Health Coördinatie. Eigen database, losgekoppeld van Roadmap Studio.",
+      "thumbnail": "thumbnails/health-roadmap.svg",
+      "status": "active",
+      "createdAt": "2026-08-21",
+      "hasDatabase": true,
+      "supabase": {
+        "projectUrl": "https://mbcukzoutmypgewzujne.supabase.co",
+        "anonKey": "sb_publishable_jebTbJr__gK_2X_L4uH26g_EfzyQpn_"
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": [
+          "team-wachtwoord 'CG Health' (hoofdletterongevoelig)"
+        ]
+      },
+      "originalPrompt": "Ik wil een nieuwe pagina maken, met daarop een exacte kopie van het storyboard uit mijn roadmap tool, met daarin de data van de CG Health. Op die pagina moet een tabblad staan waar die uitleg over de Health Sturing meeting en de Coordinatie meeting opstaan. Nee, ik wil een nieuwe tool, met nieuwe supa database eronder. Die 2 tools mogen vanaf nu onafhankelijk leven.",
+      "functionalityDescription": "Tab Storyboard: 1-op-1 kopie van het Roadmap Studio-storyboard (sticky labelkolom, streams met subcategorieën als kolommen, fasen als rijen, backlog-rij, minstens 7 kolommen per scherm), met legende/filters, drag & drop, item-modal (titel, key, status, gezondheid, context, stream, fase, start/eind) en statushistoriek. Tab Governance: Health Sturing (strategisch: roadmap, prioriteit, scope, ownership) vs. Health Coördinatie (opvolging: status, escalaties, beslissingen, impediments), deelnemers en samenspel. Data in eigen Supabase-tabellen (project health-cg-werkoverleg), gekopieerd van Roadmap Studio op 21-08-2026.",
+      "tags": [
+        "colruyt",
+        "health",
+        "roadmap",
+        "governance",
+        "supabase",
+        "storyboard"
+      ]
     }
   ]
 }
