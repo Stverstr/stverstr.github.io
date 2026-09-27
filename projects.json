@@ -488,6 +488,35 @@
         "supabase",
         "storyboard"
       ]
+    },
+    {
+      "id": "dit-of-dat",
+      "displayName": "Dit of dat",
+      "repo": "dit-of-dat",
+      "url": "https://stverstr.github.io/dit-of-dat",
+      "description": "Dilemmaspel voor twee op afstand: 200 dilemma's van spaghetti tot pikant, allebei kiezen, elkaars keuze zien en erover chatten.",
+      "thumbnail": "thumbnails/dit-of-dat.svg",
+      "status": "active",
+      "createdAt": "2026-09-27",
+      "hasDatabase": true,
+      "supabase": {
+        "projectUrl": "https://uvodxrrxsxnjlinqrjlw.supabase.co",
+        "anonKey": "sb_publishable_is9JHVr3f7hRfZh31WtLvA_sz5ymhQW"
+      },
+      "credentials": {
+        "masterProtected": true,
+        "appUsers": [
+          "gastwachtwoord 'kiesmaar'"
+        ]
+      },
+      "originalPrompt": "Ja, iets dat we op afstand kunnen spelen met 2. Het zou leuk zijn, dat we dilemma krijgen. We elk moeten kiezen. Als we gekozen hebben zien we het resultaat van elkaar. We kunnen nog even chatten met elkaar. En dan kunnen we de volgende klikken…",
+      "functionalityDescription": "Speler 1 start een spel met een code van 4 letters en deelt de link. Beide spelers krijgen hetzelfde dilemma (opbouwend van eten naar pikant), kiezen, zien pas daarna elkaars keuze (match of verschil), chatten per dilemma en klikken samen naar het volgende. Live sync via Supabase Realtime broadcast en presence, zonder tabellen.",
+      "tags": [
+        "spel",
+        "realtime",
+        "supabase",
+        "privé"
+      ]
     }
   ]
 }
