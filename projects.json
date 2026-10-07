@@ -523,7 +523,7 @@
       "displayName": "Mobiliteitspolis",
       "repo": "mobiliteitspolis",
       "url": "https://stverstr.github.io/mobiliteitspolis",
-      "description": "Gezinscheck die toont waar de dekking per voertuig gaten laat, plus een live business case voor één mobiliteitspolis per gezin.",
+      "description": "Pitch voor één mobiliteitspolis per gezin: Gezinscheck, business case, levensloop en concurrentie — plus een end-to-end demo-omgeving met zes rolportalen (klant, makelaar, P&V-beheer, fietsenwinkel, autodealer, directie).",
       "thumbnail": "thumbnails/mobiliteitspolis.svg",
       "status": "active",
       "createdAt": "2026-10-07",
@@ -537,11 +537,13 @@
         "appUsers": []
       },
       "originalPrompt": "Kan je hier een projectje voor opzetten?",
-      "functionalityDescription": "Tab Gezinscheck: gezin samenstellen (personen, voertuigen, huidige polissen), matrix per persoon en voertuig voor schade aan anderen, eigen letsel en pech, met uitleg per vakje en een omschakeling naar 'met mobiliteitspolis' met fictieve maandprijs. Tab Business case: schuifjes voor doelgroep, afsluitgraad, premie, schadelast, commissie en klantbehoud, met live combined ratio en vijfjarengrafiek. Geen wachtwoord.",
+      "functionalityDescription": "Pitchpagina (index.html): Gezinscheck met dekkingmatrix per persoon x voertuig (incl. brommer en sportfiets), business case met live combined ratio en aanwervings-KPI's, levensloopmodel en concurrentieanalyse. Demo-omgeving (app.html): aanmeldscherm met zes selecteerbare persona-accounts (an/marc/els/karim/sofie/dirk, wachtwoord 'demo'); volledige flows van offerte naar digitale handtekening naar polisuitrol (polisblad, adviesverslag, overstapoverzicht met vervaldagen, groene kaarten); prijstransparantie overal (premie-opbouw, kanaalvergoeding, eerlijke marktvergelijking); kassaflows voor fietsenwinkel en autodealer met verkoopregister; directieportaal met klikbaar ecosysteem-geldstroomdiagram en live schuiven. Getest in 10 persona-iteraties tot 9/10 per stakeholder. Geen wachtwoordgate (bewust).",
       "tags": [
-        "verzekeringen",
+        "demo-omgeving",
+        "persona-testing",
+        "presentatie",
         "strategie",
-        "presentatie"
+        "verzekeringen"
       ]
     }
   ]
