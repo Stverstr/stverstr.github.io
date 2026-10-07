@@ -517,6 +517,32 @@
         "supabase",
         "privé"
       ]
+    },
+    {
+      "id": "mobiliteitspolis",
+      "displayName": "Mobiliteitspolis",
+      "repo": "mobiliteitspolis",
+      "url": "https://stverstr.github.io/mobiliteitspolis",
+      "description": "Gezinscheck die toont waar de dekking per voertuig gaten laat, plus een live business case voor één mobiliteitspolis per gezin.",
+      "thumbnail": "thumbnails/mobiliteitspolis.svg",
+      "status": "active",
+      "createdAt": "2026-10-07",
+      "hasDatabase": false,
+      "supabase": {
+        "projectUrl": "",
+        "anonKey": ""
+      },
+      "credentials": {
+        "masterProtected": false,
+        "appUsers": []
+      },
+      "originalPrompt": "Kan je hier een projectje voor opzetten?",
+      "functionalityDescription": "Tab Gezinscheck: gezin samenstellen (personen, voertuigen, huidige polissen), matrix per persoon en voertuig voor schade aan anderen, eigen letsel en pech, met uitleg per vakje en een omschakeling naar 'met mobiliteitspolis' met fictieve maandprijs. Tab Business case: schuifjes voor doelgroep, afsluitgraad, premie, schadelast, commissie en klantbehoud, met live combined ratio en vijfjarengrafiek. Geen wachtwoord.",
+      "tags": [
+        "verzekeringen",
+        "strategie",
+        "presentatie"
+      ]
     }
   ]
 }
